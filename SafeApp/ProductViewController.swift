@@ -49,7 +49,7 @@ class ProductViewController: UIViewController {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Read the product catalog from the plist file into the dictionary.
-        if let path = Bundle.main.path(forResource: "DeviceCatalog", ofType: "plist") {
+        if let path = Bundle.main.path(forResource: "MicroCatalog", ofType: "plist") {
             productCatalog = NSDictionary(contentsOfFile: path) as? [String: [String: Any]]
         }
     }
@@ -69,20 +69,37 @@ class ProductViewController: UIViewController {
 
         // Product ID correlates to the label coming from the .mlmodel
         // We need to make sure that the key of that label matches up to the entry in Device catalog.plist
+        print("Attempting to pull up info for ")
         
-        // Print out whole entry for found Item
-        print(productCatalog[productID])
+        if (productID.contains("Amazon")) {
+            productID = "Amazon_Echo"
+        } else {
+            productID = "Google_Home_Mini"
+        }
         
-        // Print out found label
-        print("Product ID : " + productID)
-        var deviceName = productCatalog[productID]?["label"] as? String
         
         
-        manufactuer.text = productCatalog[productID]?["manufacturer"] as? String
-        uiDeviceName.text = deviceName
-        // Needs to correlate to file name of device in product resources directory
-        let deviceImageBuffer = UIImage(named: (deviceName?.lowercased())! + ".jpg")
-        devicePhoto.image = deviceImageBuffer
+        print(productID)
+        if (productCatalog.keys.contains(productID)) {
+            // Print out whole entry for found Item
+            print(productCatalog[productID])
+            
+            // Print out found label
+            print("Product ID : " + productID)
+            var deviceName = productCatalog[productID]?["label"] as? String
+            
+            
+            manufactuer.text = productCatalog[productID]?["manufacturer"] as? String
+            uiDeviceName.text = deviceName
+            // Needs to correlate to file name of device in product resources directory
+            let deviceImageBuffer = UIImage(named: (deviceName?.lowercased())! + ".jpg")
+            devicePhoto.image = deviceImageBuffer
+        } else {
+          // does not contain key
+            print("Device name does not exist in library ")
+        }
+        
+
             
     }
 }

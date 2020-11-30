@@ -60,7 +60,7 @@ class VisionViewController: ViewController {
         self.analysisRequests = ([barcodeDetection])
         
         // Setup a classification request.
-        guard let modelURL = Bundle.main.url(forResource: "ImageClassifier", withExtension: "mlmodelc") else {
+        guard let modelURL = Bundle.main.url(forResource: "echo", withExtension: "mlmodelc") else {
             return NSError(domain: "VisionViewController", code: -1, userInfo: [NSLocalizedDescriptionKey: "The model file is missing."])
         }
         guard let objectRecognition = createClassificationRequest(modelURL: modelURL) else {
@@ -83,7 +83,7 @@ class VisionViewController: ViewController {
                     
                     
                     // This is where the magic happens and the tuning will be necessary
-                    if results.first!.confidence > 0.9 {
+                    if results.first!.confidence > 0.7 {
                         self.showProductInfo(results.first!.identifier)
                     }
                     // wowzers
@@ -207,13 +207,29 @@ class VisionViewController: ViewController {
     
     func setupLayers() {
         detectionOverlay = CALayer()
-        detectionOverlay.bounds = self.view.bounds.insetBy(dx: 10, dy: 10)
+        detectionOverlay.bounds = self.view.bounds.insetBy(dx: 40, dy: 40)
         detectionOverlay.position = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
         detectionOverlay.borderColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 0.2, 0.7])
         detectionOverlay.borderWidth = 8
         detectionOverlay.cornerRadius = 20
         detectionOverlay.isHidden = true
         rootLayer.addSublayer(detectionOverlay)
+        
+        let textLayer = CATextLayer()
+//        textLayer.bounds = self.view.bounds.insetBy(dx: 10, dy: 30)
+        textLayer.anchorPoint = CGPoint(x:10,y:120)
+        textLayer.frame = self.view.bounds
+        textLayer.alignmentMode = CATextLayerAlignmentMode.center
+        textLayer.fontSize = 22.0
+        textLayer.font = UIFont(name: "TrebuchetMS-Bold", size: 22.0)
+        textLayer.isWrapped = true
+        textLayer.truncationMode = CATextLayerTruncationMode.middle
+
+        textLayer.string = "Keep Scanning For Devices!"
+        //textLayer.rasterizationScale = self.view.mainScreen().scale
+        //textLayer.contentsScale = self.view.mainScreen().scale
+        rootLayer.addSublayer(textLayer)
+        
     }
     
     @IBAction func unwindToScanning(unwindSegue: UIStoryboardSegue) {

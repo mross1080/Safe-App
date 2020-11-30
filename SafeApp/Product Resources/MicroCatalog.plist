@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Google_Home_Mini</key>
+	<dict>
+		<key>manufacturer</key>
+		<string>Google</string>
+		<key>label</key>
+		<string>Google Home Mini</string>
+	</dict>
+	<key>Amazon_Echo</key>
+	<dict>
+		<key>label</key>
+		<string>Echo</string>
+		<key>manufacturer</key>
+		<string>Amazon</string>
+	</dict>
+</dict>
+</plist>

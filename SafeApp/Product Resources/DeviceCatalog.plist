@@ -2,6 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Google_Home_Mini</key>
+	<dict>
+		<key>manufacturer</key>
+		<string>Google</string>
+		<key>label</key>
+		<string>Google Home Mini</string>
+	</dict>
+	<key>Amazon_Echo_Flex</key>
+	<dict>
+		<key>label</key>
+		<string>Echo</string>
+		<key>manufacturer</key>
+		<string>Amazon</string>
+	</dict>
+	<key>Google_Home_Max</key>
+	<dict>
+		<key>manufacturer</key>
+		<string>Google</string>
+		<key>label</key>
+		<string>Google Home Max</string>
+	</dict>
 	<key>Google_Home</key>
 	<dict>
 		<key>label</key>
@@ -9,12 +30,12 @@
 		<key>manufacturer</key>
 		<string>Google</string>
 	</dict>
-	<key>Echo</key>
+	<key>Amazon_Echo_Studio</key>
 	<dict>
 		<key>label</key>
 		<string>Echo</string>
 		<key>manufacturer</key>
-		<string>Amazon</string>
+		<string>Amazon Echo Studio</string>
 	</dict>
 	<key>Ring</key>
 	<dict>
@@ -22,6 +43,13 @@
 		<string>Ring Doorbell</string>
 		<key>manufacturer</key>
 		<string>Amazon</string>
+		<key>Amazon_Echo_Studio</key>
+		<dict>
+			<key>label</key>
+			<string>Echo</string>
+			<key>manufacturer</key>
+			<string>Amazon</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
