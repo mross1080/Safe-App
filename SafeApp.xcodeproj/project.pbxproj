@@ -24,6 +24,10 @@
 		D031023E25769E0100F5BCFF /* greencircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D031023D25769E0100F5BCFF /* greencircle.png */; };
 		D031024A25769F5D00F5BCFF /* yellow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D031024925769F5D00F5BCFF /* yellow.jpeg */; };
 		D031024D25769F9700F5BCFF /* yellowcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D031024C25769F9700F5BCFF /* yellowcircle.png */; };
+		D0B225F12576CA530077E974 /* greenlight.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B225EE2576CA520077E974 /* greenlight.png */; };
+		D0B225F22576CA530077E974 /* redlight.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B225EF2576CA530077E974 /* redlight.png */; };
+		D0B225F32576CA530077E974 /* yellowlight.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B225F02576CA530077E974 /* yellowlight.png */; };
+		D0B225F62576CD7D0077E974 /* final.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D0B225F52576CD7D0077E974 /* final.mlmodel */; };
 		FA0F95BF20B8883700378A66 /* ProductCatalog.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0F95BE20B8883700378A66 /* ProductCatalog.plist */; };
 		FA2ECFD320B7C9FB00C480B0 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */; };
 		FAA391EA20B5D2480085DA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA391E920B5D2480085DA28 /* UIKit.framework */; };
@@ -56,6 +60,10 @@
 		D031023D25769E0100F5BCFF /* greencircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencircle.png; sourceTree = "<group>"; };
 		D031024925769F5D00F5BCFF /* yellow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellow.jpeg; sourceTree = "<group>"; };
 		D031024C25769F9700F5BCFF /* yellowcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowcircle.png; sourceTree = "<group>"; };
+		D0B225EE2576CA520077E974 /* greenlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenlight.png; sourceTree = "<group>"; };
+		D0B225EF2576CA530077E974 /* redlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redlight.png; sourceTree = "<group>"; };
+		D0B225F02576CA530077E974 /* yellowlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowlight.png; sourceTree = "<group>"; };
+		D0B225F52576CD7D0077E974 /* final.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = final.mlmodel; sourceTree = "<group>"; };
 		E6CF4B95C8123B6089C142B7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		FA0F95BE20B8883700378A66 /* ProductCatalog.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductCatalog.plist; sourceTree = "<group>"; };
 		FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,9 @@
 				D0310237257559EA00F5BCFF /* MicroCatalog.plist */,
 				D031023125754FB500F5BCFF /* google home mini.jpg */,
 				D0038385256835EA00D56039 /* DeviceCatalog.plist */,
+				D0B225EE2576CA520077E974 /* greenlight.png */,
+				D0B225EF2576CA530077E974 /* redlight.png */,
+				D0B225F02576CA530077E974 /* yellowlight.png */,
 				D031023425754FE900F5BCFF /* amazon echo studio.jpg */,
 				D003837825676C0E00D56039 /* echo.jpg */,
 				D031022D25754C1D00F5BCFF /* google home max.jpg */,
@@ -157,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				D031022A256C2DEB00F5BCFF /* echo.mlmodel */,
+				D0B225F52576CD7D0077E974 /* final.mlmodel */,
 				D013AF9D253F56B0001482E8 /* ImageClassifier.mlmodel */,
 				FAD5009E1ED668B60074D713 /* AppDelegate.swift */,
 				FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */,
@@ -239,7 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B225F12576CA530077E974 /* greenlight.png in Resources */,
 				D003837925676C0E00D56039 /* echo.jpg in Resources */,
+				D0B225F22576CA530077E974 /* redlight.png in Resources */,
 				76C149AE212CC860008E974C /* LICENSE.txt in Resources */,
 				FAD500A91ED668B60074D713 /* LaunchScreen.storyboard in Resources */,
 				D003837F25676CAC00D56039 /* ring.jpg in Resources */,
@@ -249,6 +263,7 @@
 				D031022E25754C1D00F5BCFF /* google home max.jpg in Resources */,
 				D0310238257559EB00F5BCFF /* MicroCatalog.plist in Resources */,
 				D031023525754FE900F5BCFF /* amazon echo studio.jpg in Resources */,
+				D0B225F32576CA530077E974 /* yellowlight.png in Resources */,
 				D031023B2576999E00F5BCFF /* redcircle.png in Resources */,
 				FA0F95BF20B8883700378A66 /* ProductCatalog.plist in Resources */,
 				FAD500A41ED668B60074D713 /* Main.storyboard in Resources */,
@@ -267,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B225F62576CD7D0077E974 /* final.mlmodel in Sources */,
 				FAB417F62099308400494E9C /* VisionViewController.swift in Sources */,
 				D013AF9E253F56B0001482E8 /* ImageClassifier.mlmodel in Sources */,
 				FAD500A11ED668B60074D713 /* ViewController.swift in Sources */,

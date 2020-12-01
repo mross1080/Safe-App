@@ -60,7 +60,7 @@ class VisionViewController: ViewController {
         self.analysisRequests = ([barcodeDetection])
         
         // Setup a classification request.
-        guard let modelURL = Bundle.main.url(forResource: "echo", withExtension: "mlmodelc") else {
+        guard let modelURL = Bundle.main.url(forResource: "final", withExtension: "mlmodelc") else {
             return NSError(domain: "VisionViewController", code: -1, userInfo: [NSLocalizedDescriptionKey: "The model file is missing."])
         }
         guard let objectRecognition = createClassificationRequest(modelURL: modelURL) else {

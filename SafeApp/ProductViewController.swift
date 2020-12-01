@@ -122,20 +122,20 @@ class ProductViewController: UIViewController {
 //            ownership.text = productCatalog[productID]?["ownership"] as? String
 //            gov.text = productCatalog[productID]?["governance"] as? String
             let imgName = productCatalog[productID]?["orec"] as? String
-            oRecImage.image = UIImage(named: imgName! + "circle.png")
+            oRecImage.image = UIImage(named: imgName! + "light.png")
          
             let secImgName = productCatalog[productID]?["security"] as? String
-            securityImage.image = UIImage(named: secImgName! + "circle.png")
+            securityImage.image = UIImage(named: secImgName! + "light.png")
             
             let privacyName = productCatalog[productID]?["privacy"] as? String
-            privacyImage.image = UIImage(named: privacyName! + "circle.png")
+            privacyImage.image = UIImage(named: privacyName! + "light.png")
             
             let ownName = productCatalog[productID]?["ownership"] as? String
-            ownershipImage.image = UIImage(named: ownName! + "circle.png")
+            ownershipImage.image = UIImage(named: ownName! + "light.png")
             
             
             let govName = productCatalog[productID]?["governance"] as? String
-            govImage.image = UIImage(named: govName! + "circle.png")
+            govImage.image = UIImage(named: govName! + "light.png")
             
             uiDeviceName.text = deviceName
             // Needs to correlate to file name of device in product resources directory
