@@ -4,6 +4,26 @@
 <dict>
 	<key>Google_Home_Mini</key>
 	<dict>
+		<key>governance</key>
+		<string>yellow</string>
+		<key>ownership</key>
+		<string>green</string>
+		<key>privacy</key>
+		<string>yellow</string>
+		<key>security</key>
+		<string>red</string>
+		<key>orec</key>
+		<string>red</string>
+		<key>trackerDomains</key>
+		<string>13</string>
+		<key>dataRequestsPerHour</key>
+		<string>323</string>
+		<key>usesLocation</key>
+		<string>Yes</string>
+		<key>usesMicrophone</key>
+		<string>Yes</string>
+		<key>usesCamera</key>
+		<string>Yes</string>
 		<key>manufacturer</key>
 		<string>Google</string>
 		<key>label</key>
@@ -11,6 +31,26 @@
 	</dict>
 	<key>Amazon_Echo</key>
 	<dict>
+		<key>orec</key>
+		<string>yellow</string>
+		<key>security</key>
+		<string>yellow</string>
+		<key>ownership</key>
+		<string>green</string>
+		<key>privacy</key>
+		<string>red</string>
+		<key>governance</key>
+		<string>yellow</string>
+		<key>trackerDomains</key>
+		<string>8</string>
+		<key>dataRequestsPerHour</key>
+		<string>201</string>
+		<key>usesLocation</key>
+		<string>Yes</string>
+		<key>usesMicrophone</key>
+		<string>Yes</string>
+		<key>usesCamera</key>
+		<string>Yes</string>
 		<key>label</key>
 		<string>Echo</string>
 		<key>manufacturer</key>

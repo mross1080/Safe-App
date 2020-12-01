@@ -20,6 +20,10 @@
 		D031023225754FB500F5BCFF /* google home mini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D031023125754FB500F5BCFF /* google home mini.jpg */; };
 		D031023525754FE900F5BCFF /* amazon echo studio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D031023425754FE900F5BCFF /* amazon echo studio.jpg */; };
 		D0310238257559EB00F5BCFF /* MicroCatalog.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0310237257559EA00F5BCFF /* MicroCatalog.plist */; };
+		D031023B2576999E00F5BCFF /* redcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D031023A2576999E00F5BCFF /* redcircle.png */; };
+		D031023E25769E0100F5BCFF /* greencircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D031023D25769E0100F5BCFF /* greencircle.png */; };
+		D031024A25769F5D00F5BCFF /* yellow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D031024925769F5D00F5BCFF /* yellow.jpeg */; };
+		D031024D25769F9700F5BCFF /* yellowcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = D031024C25769F9700F5BCFF /* yellowcircle.png */; };
 		FA0F95BF20B8883700378A66 /* ProductCatalog.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0F95BE20B8883700378A66 /* ProductCatalog.plist */; };
 		FA2ECFD320B7C9FB00C480B0 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */; };
 		FAA391EA20B5D2480085DA28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA391E920B5D2480085DA28 /* UIKit.framework */; };
@@ -48,6 +52,10 @@
 		D031023125754FB500F5BCFF /* google home mini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "google home mini.jpg"; sourceTree = "<group>"; };
 		D031023425754FE900F5BCFF /* amazon echo studio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "amazon echo studio.jpg"; sourceTree = "<group>"; };
 		D0310237257559EA00F5BCFF /* MicroCatalog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MicroCatalog.plist; sourceTree = "<group>"; };
+		D031023A2576999E00F5BCFF /* redcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcircle.png; sourceTree = "<group>"; };
+		D031023D25769E0100F5BCFF /* greencircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencircle.png; sourceTree = "<group>"; };
+		D031024925769F5D00F5BCFF /* yellow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellow.jpeg; sourceTree = "<group>"; };
+		D031024C25769F9700F5BCFF /* yellowcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowcircle.png; sourceTree = "<group>"; };
 		E6CF4B95C8123B6089C142B7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		FA0F95BE20B8883700378A66 /* ProductCatalog.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductCatalog.plist; sourceTree = "<group>"; };
 		FA2ECFD220B7C9FB00C480B0 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +104,10 @@
 		FA0F95C220B8BE9E00378A66 /* Product Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D031024925769F5D00F5BCFF /* yellow.jpeg */,
+				D031023D25769E0100F5BCFF /* greencircle.png */,
+				D031023A2576999E00F5BCFF /* redcircle.png */,
+				D031024C25769F9700F5BCFF /* yellowcircle.png */,
 				D0310237257559EA00F5BCFF /* MicroCatalog.plist */,
 				D031023125754FB500F5BCFF /* google home mini.jpg */,
 				D0038385256835EA00D56039 /* DeviceCatalog.plist */,
@@ -232,13 +244,17 @@
 				FAD500A91ED668B60074D713 /* LaunchScreen.storyboard in Resources */,
 				D003837F25676CAC00D56039 /* ring.jpg in Resources */,
 				76D66BC5213A1AF300AEF9D9 /* Assets.xcassets in Resources */,
+				D031023E25769E0100F5BCFF /* greencircle.png in Resources */,
 				D003838025676CAC00D56039 /* google home.jpg in Resources */,
 				D031022E25754C1D00F5BCFF /* google home max.jpg in Resources */,
 				D0310238257559EB00F5BCFF /* MicroCatalog.plist in Resources */,
 				D031023525754FE900F5BCFF /* amazon echo studio.jpg in Resources */,
+				D031023B2576999E00F5BCFF /* redcircle.png in Resources */,
 				FA0F95BF20B8883700378A66 /* ProductCatalog.plist in Resources */,
 				FAD500A41ED668B60074D713 /* Main.storyboard in Resources */,
 				D0038386256835EA00D56039 /* DeviceCatalog.plist in Resources */,
+				D031024A25769F5D00F5BCFF /* yellow.jpeg in Resources */,
+				D031024D25769F9700F5BCFF /* yellowcircle.png in Resources */,
 				D031023225754FB500F5BCFF /* google home mini.jpg in Resources */,
 				D003837E25676CAC00D56039 /* echodot.jpg in Resources */,
 			);

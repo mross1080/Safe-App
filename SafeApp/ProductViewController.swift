@@ -21,7 +21,25 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var manufactuer: UILabel!
     @IBOutlet weak var devicePhoto: UIImageView!
     
+    @IBOutlet weak var trackerDomains: UILabel!
+    @IBOutlet weak var dataRequestsPerHour: UILabel!
+    @IBOutlet weak var usesCamera: UILabel!
+    @IBOutlet weak var usesMicrophone: UILabel!
     // This is an array of dictionaries.
+    @IBOutlet weak var usesLocation: UILabel!
+    
+    @IBOutlet weak var oRec: UILabel!
+    @IBOutlet weak var security: UILabel!
+    @IBOutlet weak var privacy: UILabel!
+    @IBOutlet weak var ownership: UILabel!
+    @IBOutlet weak var gov: UILabel!
+    
+    @IBOutlet weak var oRecImage: UIImageView!
+    @IBOutlet weak var securityImage: UIImageView!
+    @IBOutlet weak var privacyImage: UIImageView!
+    @IBOutlet weak var govImage: UIImageView!
+    
+    @IBOutlet weak var ownershipImage: UIImageView!
     
     // My beautiful fake data definitions since current model always returns high percentage
     let deviceDefinitions: [[String: String]] = [[
@@ -88,8 +106,37 @@ class ProductViewController: UIViewController {
             print("Product ID : " + productID)
             var deviceName = productCatalog[productID]?["label"] as? String
             
-            
+            dataRequestsPerHour.text = productCatalog[productID]?["dataRequestsPerHour"] as? String
+
+            trackerDomains.text = productCatalog[productID]?["trackerDomains"] as? String
+            usesCamera.text = productCatalog[productID]?["usesCamera"] as? String
+            usesMicrophone.text = productCatalog[productID]?["usesMicrophone"] as? String
+            usesLocation.text = productCatalog[productID]?["usesLocation"] as? String
+
             manufactuer.text = productCatalog[productID]?["manufacturer"] as? String
+            
+            //Recommendations
+
+//            security.text = productCatalog[productID]?["security"] as? String
+//            privacy.text = productCatalog[productID]?["privacy"] as? String
+//            ownership.text = productCatalog[productID]?["ownership"] as? String
+//            gov.text = productCatalog[productID]?["governance"] as? String
+            let imgName = productCatalog[productID]?["orec"] as? String
+            oRecImage.image = UIImage(named: imgName! + "circle.png")
+         
+            let secImgName = productCatalog[productID]?["security"] as? String
+            securityImage.image = UIImage(named: secImgName! + "circle.png")
+            
+            let privacyName = productCatalog[productID]?["privacy"] as? String
+            privacyImage.image = UIImage(named: privacyName! + "circle.png")
+            
+            let ownName = productCatalog[productID]?["ownership"] as? String
+            ownershipImage.image = UIImage(named: ownName! + "circle.png")
+            
+            
+            let govName = productCatalog[productID]?["governance"] as? String
+            govImage.image = UIImage(named: govName! + "circle.png")
+            
             uiDeviceName.text = deviceName
             // Needs to correlate to file name of device in product resources directory
             let deviceImageBuffer = UIImage(named: (deviceName?.lowercased())! + ".jpg")
